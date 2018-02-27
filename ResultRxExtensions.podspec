@@ -13,5 +13,5 @@ Pod::Spec.new do |s|
   s.source_files  = "Source/**/*.{swift}"
   s.requires_arc = true
   s.dependency 'RxSwift', '~> 4.0'
-  s.dependency 'Result', '~> 3.0.0'
+  s.dependency 'Result', '~> 3.0'
 end
