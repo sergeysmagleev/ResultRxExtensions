@@ -1,7 +1,7 @@
 # ResultRxExtensions
 
 ResultRxExtensions is a set of operators written on top of `RxSwift` to streamline the use of values wrapped inside `Result`.
-The intention is to simplify handling of `Observable<Result<T, Error>>` by providing the same experience as if working directly with `Observable<T>`. 
+The intention is to simplify handling of `Observable<Result<T, Error>>` by providing the same experience as if working directly with `Observable<T>`.
 For instance, instead of writing this
 ```swift
 let result = networking.getData()
@@ -27,7 +27,7 @@ let result = networking.getData()
         return transformedObject
 }
 ```
-ResultRxExtensions is doing all the wrapping and unwrapping for you, saving you from writing lots of boilerplate code.
+Both examples perform a transformation from `Observable<Result<Object, InternalError>>` to `Observable<Result<TransformedObject, InternalError>>`, but in the second case with less boilerplate code. ResultRxExtensions is doing all the wrapping and unwrapping for you, saving you from writing lots of boilerplate code.
 
 ## Methods
 **handleSuccess**
