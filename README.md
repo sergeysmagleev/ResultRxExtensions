@@ -27,7 +27,7 @@ let result = networking.getData()
         return transformedObject
 }
 ```
-Both examples perform a transformation from `Observable<Result<Object, InternalError>>` to `Observable<Result<TransformedObject, InternalError>>`, but in the second case with less boilerplate code. ResultRxExtensions is doing all the wrapping and unwrapping for you, saving you from writing lots of boilerplate code.
+Both examples perform a transformation from `Observable<Result<Object, InternalError>>` to `Observable<Result<TransformedObject, InternalError>>`, but in the second case with less boilerplate code. ResultRxExtensions is doing all the wrapping and unwrapping for you, making it easier to focus on the actual task.
 
 ## Methods
 **handleSuccess**
